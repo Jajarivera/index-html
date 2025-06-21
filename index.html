@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site &amp; Strata - Renovation & Maintenance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .logo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .logo-text h1 {
+      color: #ff5733;
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .logo-text h2 {
+      color: #ffffff;
+      font-size: 1.5rem;
+      margin: 0.3rem 0;
+      font-weight: normal;
+    }
+
+    .est-abn {
+      color: #999999;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .services-banner {
+      margin-top: 2rem;
+    }
+
+    .title-box {
+      border: 2px solid #ff5733;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      font-weight: bold;
+      color: #ff5733;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .services-banner h3 {
+      color: #ff5733;
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .service-list span {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #ffffff;
+      border-right: 2px solid #ff5733;
+      padding-right: 10px;
+    }
+
+    .service-list span:last-child {
+      border-right: none;
+    }
+
+    .footer-line {
+      color: #ff5733;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .emergency {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    nav {
+      background: #1a1a1a;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      background: #121212;
+      color: #ffffff;
+    }
+
+    .services, .portfolio, .testimonials {
+      background: #1a1a1a;
+    }
+
+    .service-item, .portfolio-item, .testimonial {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background-color: #333333;
+      border: 1px solid #ff5733;
+      color: #ffffff;
+    }
+
+    button {
+      background-color: #ff5733;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e74c3c;
+    }
+
+    /* Before and After Slider Styles */
+    .slider-container {
+      max-width: 600px;
+      margin: 1rem auto;
+      position: relative;
+    }
+
+    .ba-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      cursor: ew-resize;
+    }
+
+    .ba-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .ba-before {
+      z-index: 1;
+    }
+
+    .ba-after {
+      clip-path: inset(0 50% 0 0);
+      z-index: 2;
+      transition: clip-path 0.2s ease;
+    }
+
+    .ba-slider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background-color: #ff5733;
+      z-index: 3;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <div class="logo-text">
+        <h1>SITE &amp; STRATA</h1>
+        <h2>SOLUTIONS</h2>
+        <div class="est-abn">
+          <div>EST. 2010</div>
+          <div>ABN 18 162 775 411</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-banner">
+      <div class="title-box">Building Maintenance Services</div>
+      <h3>COMMERCIAL &amp; RESIDENTIAL</h3>
+      <div class="service-list">
+        <span>REPAIRS</span>
+        <span>RENOVATIONS</span>
+        <span>PLUMBING</span>
+        <span>ELECTRICAL</span>
+        <span>PAINTING</span>
+        <span>INSTALLATIONS</span>
+      </div>
+      <div class="footer-line">We're one call away with all your building needs!</div>
+      <div class="emergency">24 Hour Emergency Services</div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a team of skilled professionals delivering top-quality renovation and maintenance services with over 10 years of hands-on experience. From small fixes to complete home transformations — we’ve got you covered.
+
+We specialize in fencing, painting, general maintenance, gutter cleaning, deep cleaning, lawn mowing, and much more. Plus, with our in-house Tiler, Electrician, Plumber, and Painter, we’re your reliable one-stop shop for all your property needs.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+      <h3>Kitchen & Bathroom Renovation</h3>
+      <p>Custom designs, modern upgrades, and complete remodeling.</p>
+    </div>
+    <div class="service-item">
+      <h3>Electrical & Plumbing</h3>
+      <p>Reliable repair and installation from certified technicians.</p>
+    </div>
+    <div class="service-item">
+      <h3>Painting & Flooring</h3>
+      <p>Interior and exterior painting, hardwood and tile flooring.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Project Gallery</h2>
+    <div class="portfolio-item">
+      <p><strong>Modern Kitchen Remodel</strong><br>Before and after transformation with new cabinets and lighting.</p>
+    </div>
+    <div class="portfolio-item">
+      <p><strong>Exterior Painting</strong><br>Complete repainting of a two-story house.</p>
+    </div>
+
+    <!-- BEFORE & AFTER SLIDER -->
+    <div class="portfolio-item">
+      <p><strong>Before & After Slider – Living Room</strong></p>
+      <div class="slider-container">
+        <div class="ba-wrapper">
+          <img src="Floor before 1.jpg" alt="Before" class="ba-img ba-before">
+          <img src="Floor after 1.jpg" alt="After" class="ba-img ba-after">
+          <div class="ba-slider"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"Amazing work! The team was professional, on time, and our bathroom looks stunning." – Sarah M.</p>
+    </div>
+    <div class="testimonial">
+      <p>"They renovated my entire kitchen flawlessly. Highly recommended!" – James R.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Request a free quote or ask us a question:</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Site &amp; Strata - Renovation & Maintenance. All rights reserved.</p>
+  </footer>
+  
+  <h2>Before and After</h2>
+<div>
+  <img src="Floor before 1.jpg" alt="Before" width="300">
+  <img src="Floor after 1.jpg" alt="After" width="300">
+</div>
+
+</body>
+</html>
